@@ -63,8 +63,9 @@ def call(reg, ext):
 	y = ext[4]
 	val = ext[3]
 	
-	setdisp(x,y,val)
-	refresh()
+	if ext[2] != 0:
+		setdisp(x,y,val)
+		refresh()
 	
 	
 	
